@@ -1,0 +1,85 @@
+# SyTarla Mesaj Konfigürasyonu
+# Tüm mesajlarda RGB renk kodları kullanılabilir. Örnek: &#FF5555 veya &#00FFCD
+
+prefix: "&#00FFCD&lSY TARLA &#8250; "
+
+# Ekin kırıldığında ekranın altında (Actionbar) gözükecek mesaj
+actionbar:
+  enabled: true
+  message: "&#00FFCD+1 &#FFFF55%crop% &#00FFCDHasat Edildi! &#77FF77(%tarla%)"
+
+# Canlı Hologram (TextDisplay) Metin Ayarları
+hologram:
+  lines:
+    - "&#00FFCD&l❖ %tarla% TARLASI ❖"
+    - "&7Durum: %durum%"
+    - "&7Büyüme: %buyume_bar% &e(%buyume_yuzde%%)"
+    - "&7Olgunlaşan: &#55FF55%olgun_ekin%&7/&#FFFFFF%toplam_ekin% Ekin"
+  status-ready: "&#55FF55● Hasada Hazır!"
+  status-growing: "&#FFFF55● Büyüyor..."
+  status-empty: "&#AAAAAA● Ekin Yok"
+
+messages:
+  no-permission: "&#FF4B4BBu eylemi gerçekleştirmek için yetkiniz yok!"
+  pos1-set: "&#55FF551. Konum başarıyla seçildi: &#FFFFFFx: %x%, y: %y%, z: %z%"
+  pos2-set: "&#55FF552. Konum başarıyla seçildi: &#FFFFFFx: %x%, y: %y%, z: %z%"
+  no-selection: "&#FF4B4BLütfen önce &#FFFF55/sytarla pos1 &#FF4B4Bve &#FFFF55/sytarla pos2 &#FF4B4Bile iki köşe seçin!"
+  already-exists: "&#FF4B4B'&f%name%&#FF4B4B' adında bir tarla zaten mevcut!"
+  created: "&#55FF55'&f%name%&#55FF55' adlı tarla bölgesi başarıyla oluşturuldu!"
+  not-found: "&#FF4B4B'&f%name%&#FF4B4B' adında bir tarla bulunamadı!"
+  deleted: "&#FF4B4B'&f%name%&#FF4B4B' adlı tarla silindi."
+  item-set: "&#55FF55Tarlanın özel ödül eşyası elinizdeki eşya olarak ayarlandı!"
+  item-cleared: "&#FFFF55Tarlanın özel ödül eşyası kaldırıldı (varsayılan drop verecek)."
+  no-item-in-hand: "&#FF4B4BLütfen önce elinize bir eşya alın!"
+  chance-set: "&#55FF55'&f%name%&#55FF55' tarlasının özel eşya düşme şansı &#FFFF55%%%chance%&#55FF55 olarak ayarlandı!"
+  grown-success: "&#55FF55'&f%name%&#55FF55' tarlasındaki ekinler tamamen büyütüldü! &#77FF77(%count% adet ekin)"
+  invalid-number: "&#FF4B4BLütfen geçerli bir sayı girin!"
+  invalid-chance: "&#FF4B4BŞans oranı 0 ile 100 arasında bir değer olmalıdır!"
+  msg-toggle-on: "&#55FF55'&f%name%&#55FF55' tarlasının büyüme duyuruları &#55FF55AÇILDI&#55FF55!"
+  msg-toggle-off: "&#FF4B4B'&f%name%&#FF4B4B' tarlasının büyüme duyuruları &#FF4B4BKAPATILDI&#FF4B4B!"
+  reloaded: "&#55FF55Konfigürasyon ve mesajlar başarıyla yenilendi!"
+  not-in-region: "&#FF4B4BHerhangi bir tarla bölgesinde değilsiniz! Lütfen bir tarla adı belirtin."
+
+  # Hologram Komut Mesajları
+  hologram-created: "&#55FF55'&f%name%&#55FF55' tarlası için hologram bulunduğunuz konuma oluşturuldu!"
+  hologram-deleted: "&#FF4B4B'&f%name%&#FF4B4B' tarlasının hologramı silindi."
+  hologram-moved: "&#55FF55'&f%name%&#55FF55' tarlasının hologramı bulunduğunuz konuma taşındı!"
+  hologram-shadow-on: "&#55FF55'&f%name%&#55FF55' hologramı için metin gölgesi (textshadow) &#55FF55AÇILDI&#55FF55!"
+  hologram-shadow-off: "&#FF4B4B'&f%name%&#FF4B4B' hologramı için metin gölgesi (textshadow) &#FF4B4BKAPATILDI&#FF4B4B!"
+  hologram-bg-transparent: "&#55FF55'&f%name%&#55FF55' hologramı arka planı &#55FF55ŞEFFAF (Transparan)&#55FF55 yapıldı!"
+  hologram-bg-normal: "&#FFFF55'&f%name%&#FFFF55' hologramı arka planı &#FFFF55NORMAL&#FFFF55 yapıldı."
+  hologram-billboard-set: "&#55FF55'&f%name%&#55FF55' hologramının yön/billboard modu &#FFFF55%mode%&#55FF55 olarak ayarlandı!"
+  hologram-rotated-yaw: "&#55FF55'&f%name%&#55FF55' hologramı yatay olarak &#FFFF55%angle%°&#55FF55 döndürüldü!"
+  hologram-rotated-pitch: "&#55FF55'&f%name%&#55FF55' hologramı dikey olarak &#FFFF55%angle%°&#55FF55 döndürüldü!"
+  hologram-not-found: "&#FF4B4BBu tarla için henüz bir hologram oluşturulmamış!"
+
+  # Tarladaki TÜM ekinler tamamen büyüdüğünde gönderilecek duyuru
+  growth-announcement:
+    - "&#00FFCD&m--------------------------------------------------"
+    - "&#FFFF55&lBÜYÜME BİLDİRİMİ! &#77FF77'%tarla%' &#fffffftarlasındaki TÜM ekinler tamamen büyüdü!"
+    - "&#FFFFFFHemen tarlayı hasat ederek özel ödülleri toplayabilirsin!"
+    - "&#00FFCD&m--------------------------------------------------"
+
+  help:
+    - "&#00FFCD&m------------------&#00FFCD[ &f&lSY TARLA KOMUTLARI &#00FFCD]&m------------------"
+    - "&#FFFF55/sytarla pos1 &#8250; &#FFFFFFBirinci köşeyi seçer."
+    - "&#FFFF55/sytarla pos2 &#8250; &#FFFFFFİkinci köşeyi seçer."
+    - "&#FFFF55/sytarla oluştur <ad> &#8250; &#FFFFFFSeçilen alanda yeni tarla oluşturur."
+    - "&#FFFF55/sytarla sil <ad> &#8250; &#FFFFFFBelirtilen tarlayı siler."
+    - "&#FFFF55/sytarla list &#8250; &#FFFFFFTüm tarlaları listeler."
+    - "&#FFFF55/sytarla edit [ad] &#8250; &#FFFFFFTarla ayarlarını düzenleme menüsünü açar."
+    - "&#FFFF55/sytarla büyüt [ad] &#8250; &#FFFFFFTarladaki tüm ekinleri anında büyütür (duyurusuz)."
+    - "&#FFFF55/sytarla itemayarla [ad] &#8250; &#FFFFFFElinizdeki eşyayı tarlanın ödülü yapar."
+    - "&#FFFF55/sytarla şansayarla <yüzde> [ad] &#8250; &#FFFFFFÖzel eşyanın düşme şansını ayarlar (0-100)."
+    - "&#FFFF55/sytarla mesaj <aç|kapat> [ad] &#8250; &#FFFFFFTarlanın büyüme duyurusunu açar/kapatır."
+    - "&#00FFCD&lHologram Komutları:"
+    - "&#FFFF55/sytarla hologram oluştur [ad] &#8250; &#FFFFFFBulunduğunuz yere hologram koyar."
+    - "&#FFFF55/sytarla hologram sil [ad] &#8250; &#FFFFFFTarlanın hologramını siler."
+    - "&#FFFF55/sytarla hologram taşı [ad] &#8250; &#FFFFFFHologramı bulunduğunuz yere taşır."
+    - "&#FFFF55/sytarla hologram rotate <açı> [ad] &#8250; &#FFFFFFHologramı yatay eksende döndürür."
+    - "&#FFFF55/sytarla hologram rotatepitch <açı> [ad] &#8250; &#FFFFFFHologramı dikey eksende döndürür."
+    - "&#FFFF55/sytarla hologram textshadow <aç|kapat> [ad] &#8250; &#FFFFFFGölgeyi ayarlar."
+    - "&#FFFF55/sytarla hologram background <şeffaf|normal> [ad] &#8250; &#FFFFFFArka planı ayarlar."
+    - "&#FFFF55/sytarla hologram billboard <center|fixed|vertical|horizontal> [ad] &#8250; &#FFFFFFYön modunu ayarlar."
+    - "&#FFFF55/sytarla yenile &#8250; &#FFFFFFEklenti konfigürasyonunu yeniler."
+    - "&#00FFCD&m------------------------------------------------------------------"

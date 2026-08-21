@@ -1,0 +1,39 @@
+# SyTarla Genel Konfigürasyonu
+database:
+  # Veritabanı Türü: SQLITE veya MYSQL
+  type: "SQLITE"
+  sqlite:
+    file-name: "database.db"
+  mysql:
+    host: "localhost"
+    port: 3306
+    database: "sytarla"
+    username: "root"
+    password: ""
+    use-ssl: false
+
+settings:
+  # Varsayılan tarla adı (Komutlarda tarla adı belirtilmezse ve oyuncu bir tarlada değilse kullanılır)
+  default-tarla: ""
+
+  # Varsayılan olarak izin verilen ekinler
+  default-enabled-crops:
+    - WHEAT
+    - CARROTS
+    - POTATOES
+    - BEETROOTS
+    - NETHER_WART
+    - SUGAR_CANE
+    - PUMPKIN
+    - MELON
+    - COCOA
+
+  # Ekin kırıldığında ses efektleri
+  play-sound-on-break: true
+  break-sound: "ENTITY_ITEM_PICKUP"
+
+  # Oyuncu envanteri doluysa eşya yere mi düşsün yoksa envantere mi eklensin?
+  drop-to-inventory: true
+
+  # Toprağın üzerine zıplayınca (trample) toprağın dirte dönüşmesini engelle
+  prevent-farmland-trample: true

@@ -1,0 +1,19 @@
+# SyTarla Discord Webhook Konfigürasyonu
+# Ekinler %100 olgunlaştığında Discord kanalına bildirim gönderilmesini sağlar.
+
+enabled: false
+url: "https://discord.com/api/webhooks/your_webhook_url_here"
+
+# Webhook Bot Profili
+username: "SyTarla"
+avatar-url: "https://i.imgur.com/83pA4ZJ.png"
+
+# Embed Bildirim Ayarları
+embed:
+  title: "🌾 Tarla Hasada Hazır!"
+  description: "**%tarla%** tarlasındaki tüm ekinler tamamen büyüdü ve hasat edilmeyi bekliyor!\n\n📍 **Dünya:** `%dunya%`\n🌱 **Toplam Ekin:** `%toplam_ekin%`\n⚡ **Özel Ödül Şansı:** `%%%sans%`"
+  # Renk formatı (Hex kodu: #00FFCD veya integer: 65485)
+  color: "#00FFCD"
+  footer-text: "SyTarla • Skyblock Tarla Sistemi"
+  footer-icon-url: ""
+  timestamp: true

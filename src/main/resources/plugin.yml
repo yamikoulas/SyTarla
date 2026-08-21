@@ -1,0 +1,24 @@
+name: SyTarla
+version: 1.0
+main: me.sytarla.SyTarla
+api-version: '1.20'
+author: Syniox
+description: Gelişmiş Skyblock Tarla Koruması, Otomatik Ekim, Canlı Hologram, Veritabanı ve Discord Webhook Eklentisi
+
+commands:
+  sytarla:
+    description: SyTarla ana komutu
+    aliases: [tarla, sytarlalar, starla, tarlalar]
+    permission: sytarla.admin
+    permission-message: "&cBu komutu kullanmak için yetkiniz yok!"
+
+permissions:
+  sytarla.use:
+    description: Tarlayı kullanabilme ve ekinleri hasat edebilme izni
+    default: true
+
+  sytarla.admin:
+    description: SyTarla tüm yönetim yetkileri ve komut kullanımı
+    default: op
+    children:
+      sytarla.use: true
